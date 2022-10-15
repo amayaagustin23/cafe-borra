@@ -1,0 +1,67 @@
+.navbar-container{
+    display: flex;
+    flex-direction: column;
+    &__box{
+        margin-inline: 150px;
+
+    }
+    &__header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: $grey;
+    }
+    &__header-text{
+        color: $white;
+        padding: 10px;
+    }
+    &__box-nav{
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 2rem;
+        align-items: center;
+    }
+    &__box-search{
+       width: 25rem; 
+    }
+    &__logo{
+        width: 15rem;
+    }
+    &__user-register{
+        width: 25rem; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            color: $grey;
+        }
+        hr{
+            margin-inline: 5px;
+        }
+    }
+    &__user-box{
+        display: flex;
+        align-items: center;
+    }
+    &__icon-user{
+        color: $beige;
+        width: 25px !important;
+    }
+    &__text-user{
+        color: $beige;
+    }
+    &__box-routes{
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+    }
+    &__route{
+        padding: 1rem;
+        color: $grey;
+        &:hover{
+            color: $beige;
+            border-top: 1px $grey solid;
+            border-bottom: 1px $grey solid;
+        }
+    }
+}

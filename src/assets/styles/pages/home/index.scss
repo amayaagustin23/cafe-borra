@@ -1,0 +1,50 @@
+.home-container {
+	&__categories-image {
+		display: flex;
+		justify-content: space-between;
+		margin: 3rem 0;
+	}
+	&__category-image {
+		width: 30rem;
+		height: 30rem;
+		overflow: hidden;
+		img {
+			transition: transform 1.5s ease;
+		}
+	}
+	&__category-image:hover img {
+		transform: scale(1.1);
+	}
+	&__text {
+		color: $grey;
+		text-align: center;
+	}
+	&__products-container {
+		margin-top: 2rem;
+		display: flex;
+	}
+	&__categories {
+		width: 15rem;
+	}
+	&__text-category {
+		font-size: 23px;
+		color: $grey;
+		font-weight: bold;
+	}
+	&__box-categories {
+		margin-top: 1rem;
+		display: flex;
+		flex-direction: column;
+		a {
+			text-decoration: none;
+			color: $grey;
+			margin-bottom: 0.5rem;
+			font-size: small;
+		}
+	}
+	&__products {
+		display: grid;
+		grid-gap: 25px;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

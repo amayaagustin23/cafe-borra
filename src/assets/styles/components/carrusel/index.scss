@@ -1,0 +1,20 @@
+.image-carrusel{
+    width: 100%;
+    height: 550px ;
+    object-fit:cover;
+}
+.slick-arrow{
+    border-radius: 50%;
+}
+.slick-prev{
+    background-color: $grey !important;
+    z-index: 1;
+    left: 0;
+    margin-left: 20px;
+}
+.slick-next{
+    background-color: $grey !important;
+    z-index: 1;
+    right: 0;
+    margin-right: 20px;
+}
