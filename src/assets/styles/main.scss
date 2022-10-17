@@ -12,7 +12,7 @@ a{
     margin-inline: 200px;
     position: relative;
     &__whatsapp{
-        position: absolute;
+        position: fixed;
         bottom: 10px;
         right: 20px;
     }
