@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Carrusel from './slider';
 import Cafe from '../../assets/resources/cafe.jpg';
 import Kits from '../../assets/resources/kits.jpg';
 import Lecturas from '../../assets/resources/lecturas.jpg';
 import Product from '../../components/product';
+import Button from '../../components/button';
+import Info from './infoSeccion';
 
 const listproducts = [
   {
@@ -54,6 +56,12 @@ const listproducts = [
 
 const Home = () => {
   const [products] = useState(listproducts);
+  const navigate = useNavigate();
+
+  const viewProducts = () => {
+    navigate('/shop');
+  };
+
   return (
     <div className="home-container">
       <Carrusel />
@@ -88,6 +96,10 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <div className="home-container__button-container">
+        <Button type="button" text="VER TODOS LOS PRODUCTOS" onClick={viewProducts} />
+      </div>
+      <Info />
     </div>
   );
 };

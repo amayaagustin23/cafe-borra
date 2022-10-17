@@ -1,0 +1,36 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    &__body{
+        background-color: $greyWhite;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 200px;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+    }
+    &__route{
+        color: $black;
+        margin-block: .2rem;
+    }
+    &__socials{
+        display: flex;
+        gap: 10px;
+        margin: .5rem 0;
+    }
+    &__email{
+        margin-top: .2rem;
+        display: flex;
+    }
+    &__copy{
+       display: flex;
+       justify-content: center;
+       padding: .2rem;
+    }
+    &__link-copy{
+        color: $black;
+        font-weight: bold;
+    }
+}

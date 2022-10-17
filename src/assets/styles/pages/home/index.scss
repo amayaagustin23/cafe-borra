@@ -6,7 +6,7 @@
 	}
 	&__category-image {
 		width: 30rem;
-		height: 30rem;
+		height: 26rem;
 		overflow: hidden;
 		img {
 			transition: transform 1.5s ease;
@@ -46,5 +46,10 @@
 		display: grid;
 		grid-gap: 25px;
 		grid-template-columns: repeat(4, 1fr);
+	}
+	&__button-container{
+		margin:  3rem 0;
+		display: flex;
+		justify-content: center;
 	}
 }

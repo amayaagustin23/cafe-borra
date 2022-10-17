@@ -9,10 +9,26 @@ const Product = ({ data }) => (
     </div>
     <div className="product-container__text">
       <p className="product-container__name">{data.name}</p>
-      <p className="product-container__price">
-        $
-        {new Intl.NumberFormat('de-DE').format(data.price)}
-      </p>
+      {data.price !== data.priceOld
+        ? (
+          <div className="product-container__price-container">
+            <p className="product-container__price--old">
+              $
+              {new Intl.NumberFormat('de-DE').format(data.priceOld)}
+            </p>
+            <hr />
+            <p className="product-container__price">
+              $
+              {new Intl.NumberFormat('de-DE').format(data.price)}
+            </p>
+          </div>
+        )
+        : (
+          <p className="product-container__price">
+            $
+            {new Intl.NumberFormat('de-DE').format(data.price)}
+          </p>
+        )}
     </div>
   </div>
 );

@@ -1,0 +1,22 @@
+.button-container{
+    background-color: $beige;
+    color: $white;
+    border: none;
+    padding: 1rem 5rem;
+    &:hover{
+        border: 1px $grey solid;
+        cursor: pointer;
+    }
+    &__send{
+        color: $white !important;
+    }
+}
+.button-container--email{
+    background-color: $black;
+    border: none;
+    padding: .3rem ;
+    &:hover{
+        border: 1px $grey solid;
+        cursor: pointer;
+    }
+}

@@ -32,6 +32,22 @@
     &__price{
         color: $grey;
         margin-top: 2px;
-        font-size: 18px;
+        font-size: 22px;
+        font-weight: bold;
     }
+    &__price-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+    &__price--old{
+        color: $grey;
+        margin-top: 2px;
+        font-size: 20px;
+        text-decoration: line-through;
+    }
+}
+hr{
+    height: 18px;
 }

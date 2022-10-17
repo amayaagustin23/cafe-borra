@@ -1,0 +1,27 @@
+.info-container{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    &__box{
+        display: flex;
+        align-items: center;
+        height: 5rem;
+    }
+    &__icon{
+        color: $grey;
+        margin-inline: 2rem;
+        transform: scale(1.8);
+    }
+    &__text-main{
+        font-size: 20px;
+        font-weight: bold;
+        color: $grey;
+    }
+    &__text-secondary{
+        font-size: 20px;
+        color: $grey;
+    }
+    &__line{
+        height: 5rem;
+    }
+}
