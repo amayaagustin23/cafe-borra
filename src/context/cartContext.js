@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
 const cartContext = createContext({
-  count: null,
+  count: 0,
   listCart: []
 });
 

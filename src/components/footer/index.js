@@ -23,12 +23,12 @@ const Footer = () => (
       <div>
         <h3>REDES SOCIALES</h3>
         <div className="footer-container__socials">
-          <Link to="https://www.facebook.com/hijade.lapolvora/">
+          <a target="_blank" href="https://www.facebook.com/hijade.lapolvora/" rel="noreferrer">
             <img src={Facebook} alt="facebook" width="35" />
-          </Link>
-          <Link to="https://www.instagram.com/hijadelapolvora/">
+          </a>
+          <a target="_blank" href="https://www.instagram.com/hijadelapolvora/" rel="noreferrer">
             <img src={Instagram} alt="instagram" width="35" />
-          </Link>
+          </a>
         </div>
         <h3>NEWSLETTER</h3>
         <div className="footer-container__email">

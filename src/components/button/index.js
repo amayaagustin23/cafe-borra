@@ -25,7 +25,7 @@ const Button = ({
 
 Button.propTypes = {
   type: PropTypes.string,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   onClick: PropTypes.func,
   email: PropTypes.bool
 };
@@ -33,6 +33,7 @@ Button.propTypes = {
 Button.defaultProps = {
   type: 'button',
   onClick: () => {},
-  email: false
+  email: false,
+  text: ''
 };
 export default Button;

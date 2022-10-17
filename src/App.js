@@ -1,12 +1,19 @@
-import React from 'react';
+/* eslint-disable react/jsx-no-constructed-context-values */
+import React, { useState } from 'react';
 import AppRoutes from './routes/route';
 import './App.scss';
+import CartContext from './context/cartContext';
 
 function App() {
+  const [countCart, setCountCart] = useState();
+  const updateCount = (value) => {
+    setCountCart({ ...countCart, count: value });
+  };
+
   return (
-    <div className="App">
+    <CartContext.Provider value={{ countCart, updateCount }}>
       <AppRoutes />
-    </div>
+    </CartContext.Provider>
   );
 }
 

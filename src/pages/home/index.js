@@ -7,7 +7,6 @@ import Kits from '../../assets/resources/kits.jpg';
 import Lecturas from '../../assets/resources/lecturas.jpg';
 import Product from '../../components/product';
 import Button from '../../components/button';
-import Info from './infoSeccion';
 
 const listproducts = [
   {
@@ -99,7 +98,6 @@ const Home = () => {
       <div className="home-container__button-container">
         <Button type="button" text="VER TODOS LOS PRODUCTOS" onClick={viewProducts} />
       </div>
-      <Info />
     </div>
   );
 };
